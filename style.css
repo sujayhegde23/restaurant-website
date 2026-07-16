@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+.main-container{
+    max-width: 1200px;
+    width: 90%;
+    margin:0 auto;
+}
+
+
+/* header */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-bottom: 30px;
+
+}
+
+.nav-menu{
+    width:30px;
+    height: 40px;
+}
+
+/* main */
+
+.hero-container{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    
+}
+
+.hero-image{
+    width: 50%;
+    margin:0px 15px;
+    max-width: 500px;
+}
+
+.hero-description{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+
+
+
