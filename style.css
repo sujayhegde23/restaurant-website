@@ -3,8 +3,13 @@
     padding: 0px;
     margin:0px;
 }
+body{
+    background-color: azure;
+}
 .main-container{
-    max-width: 1200px;
+    background-color: aliceblue;
+    max-width: 1300px;
+    padding:0 50px;
     width: 90%;
     margin:0 auto;
 }
@@ -32,6 +37,9 @@
     width:100%;
     justify-content: space-around;
     
+}
+.hero-image-small{
+    display: none;
 }
 
 .hero-image{
@@ -136,37 +144,6 @@ h4.menu-heading{
 
 
 
-@media (max-width: 900px){
-  .grid-food-items{
-    grid-template-columns: repeat(3, 1fr);
-    padding:5px;
-  }
-
-  .grid-image-1,
-  .grid-image-2,
-  .grid-image-7{
-    grid-column: auto;
-    grid-row: auto;
-  }
-
-    img.grid-image-7 {
-    display: none;
-  }
-}
-
-
-@media (max-width: 600px){
-  .grid-food-items{
-    grid-template-columns: 1fr;
-  }
-
-  .grid-food-items img{
-    grid-column: auto;
-    grid-row: auto;
-  }
-}
-
-
 /* footer */
 
 .footer-container{
@@ -176,6 +153,7 @@ h4.menu-heading{
     padding-bottom: 100px;
     gap:80px;
     background-color: bisque;
+
 }
 
 .footer-logo{
@@ -201,8 +179,104 @@ h4.menu-heading{
 .footer-container input ,button{
     margin: 4px 2px;
     padding:2px 4px;
+     font-weight:bold;
+    border:2px solid black;
 }
 
 .footer-container i{
     padding :2px 4px;
 }
+
+
+
+@media (max-width: 900px){
+    .main-container{
+        padding:5px;
+    }
+
+    .logo{
+        width:150px;
+    }
+
+  .grid-food-items{
+    grid-template-columns: repeat(3, 1fr);
+    padding:0;
+  }
+
+  .grid-image-1,
+  .grid-image-2,
+  .grid-image-7{
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+    img.grid-image-7 {
+    display: none;
+  }
+
+  .footer-container{
+    margin-top:30px;
+    gap:30px;
+  }
+
+  .footer-logo{
+    width:100px;
+    height: 50px;
+}
+
+  .footer-container h4{
+    font-size: 0.8rem;
+    padding: 8px 0;
+}
+
+.footer-container ul li{
+    font-size: small;
+    padding: 4px 0;
+}
+}
+
+
+@media (max-width: 600px){
+
+    .logo{
+        width:100px;
+    }
+
+    .hero-image{
+        display: none;
+    }
+
+    .hero-image-small{
+        display:inline;
+        width: 50%;
+        max-width: 500px;
+        border-radius: 20px;
+    }
+
+  .grid-food-items{
+    grid-template-columns: 1fr;
+    padding:0 
+  }
+
+  .grid-food-items img{
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .footer-container{
+    gap:10px;
+  }
+
+  .footer-container input ,button{
+    width: 60px;
+    margin: 2px 0;
+    padding:2px 4px;
+    }
+
+  .footer-container h4{
+    font-size: small;
+    padding: 6px 0;
+    }
+}
+
+
