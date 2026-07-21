@@ -4,10 +4,12 @@
     margin:0px;
 }
 body{
-    background-color: azure;
+    background-color:rgb(225, 218, 208);
+    padding-top:50px;
 }
 .main-container{
     background-color: aliceblue;
+    border:3px solid black;
     max-width: 1300px;
     padding:0 50px;
     width: 90%;
@@ -152,8 +154,6 @@ h4.menu-heading{
     padding-top:50px;
     padding-bottom: 100px;
     gap:80px;
-    background-color: bisque;
-
 }
 
 .footer-logo{
