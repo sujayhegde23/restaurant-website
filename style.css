@@ -139,6 +139,7 @@ h4.menu-heading{
 @media (max-width: 900px){
   .grid-food-items{
     grid-template-columns: repeat(3, 1fr);
+    padding:5px;
   }
 
   .grid-image-1,
@@ -163,4 +164,45 @@ h4.menu-heading{
     grid-column: auto;
     grid-row: auto;
   }
+}
+
+
+/* footer */
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    padding-top:50px;
+    padding-bottom: 100px;
+    gap:80px;
+    background-color: bisque;
+}
+
+.footer-logo{
+    width:150px;
+    height: 100px;
+}
+
+ .footer-container ul {
+    list-style: none;
+}
+
+.footer-container ul li{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4px 0;
+}
+
+.footer-container h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+.footer-container input ,button{
+    margin: 4px 2px;
+    padding:2px 4px;
+}
+
+.footer-container i{
+    padding :2px 4px;
 }
